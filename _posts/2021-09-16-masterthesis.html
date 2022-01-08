@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Master Thesis at the Riniker Research Lab, ETH Zurich"
+subtitle: "High-Dimensional Neural Network Potentials for the Calculation of Hartree-Fock Coefficients"
+date: 2021-09-16
+#background: '/img/posts/01.jpg'
+---
+
+
+<h2 class="section-heading">Abstract</h2>
+
+<p>Hartree-Fock self-consistent field (SCF) calculations are the foundation of ab initio wave mechanic methods. Hence, the computation time of wave function methods depends on the convergence time of the SCF algorithm. In this work, we propose a workflow to learn the Hartree-Fock molecular orbital coefficients (MO) using high-dimensional neural network potentials (HDNNP). </p>
+
+<p>Here, the HDNNPs map the Cartesian coordinates of a molecule to the corresponding MO matrix. The environment of each atom is encoded using so-called symmetry functions. We use these HDNNPs to predict initial guesses for the SCF routine to reduce the compu tational cost for the SCF algorithm. </p>
+
+<p>We introduce a modification to the HDNNP architecture which enables us to reduce the number of trainable parameters. The modified HDNNPs map the input information to the atomic orbital coefficients (AO), which are then used in a second step to construct the MO matrix. We also test to use rotational equivariant features and apply a ∆-learning scheme. The models are trained on a data set of 1000 conformers of formaldehyde and evaluated by the number of SCF iterations. </p>
